@@ -15,7 +15,29 @@
             background-color: #222;
             color: #fff;
             padding: 20px;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        /* Style for login/signup icons container */
+        .auth-icons {
+            display: flex;
+            gap: 15px;
+        }
+        /* Style for icons */
+        .auth-icons a {
+            color: #fff;
+            font-size: 1.5em;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        /* Optional: hover effect for icons */
+        .auth-icons a:hover {
+            color: #ddd;
         }
         nav {
             display: flex;
@@ -68,10 +90,21 @@
             background-color: #218838;
         }
     </style>
+    <!-- Optional: include Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1>NY FILMS</h1>
+        <!-- Login/Signup icons -->
+        <div class="auth-icons">
+            <a href="login.html" title="Login">
+                <i class="fas fa-sign-in-alt"></i>
+            </a>
+            <a href="signup.html" title="Sign Up">
+                <i class="fas fa-user-plus"></i>
+            </a>
+        </div>
     </header>
     <nav>
         <a href="#">AGASOBANUYE</a>
@@ -102,4 +135,3 @@
     </div>
 </body>
 </html>
-
