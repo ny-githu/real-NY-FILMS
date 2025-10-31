@@ -1,137 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NY FILMS</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #222;
-            color: #fff;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        /* Style for login/signup icons container */
-        .auth-icons {
-            display: flex;
-            gap: 15px;
-        }
-        /* Style for icons */
-        .auth-icons a {
-            color: #fff;
-            font-size: 1.5em;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-        /* Optional: hover effect for icons */
-        .auth-icons a:hover {
-            color: #ddd;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #444;
-        }
-        nav a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            display: block;
-        }
-        nav a:hover {
-            background-color: #666;
-        }
-        .container {
-            padding: 20px;
-        }
-        .movies {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        .movie {
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            text-align: center;
-            padding: 10px;
-        }
-        .movie img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
-        .movie h3 {
-            margin: 10px 0 5px 0;
-        }
-        .download-btn {
-            display: inline-block;
-            padding: 10px 15px;
-            margin-top: 10px;
-            background-color: #28a745;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 4px;
-        }
-        .download-btn:hover {
-            background-color: #218838;
-        }
-    </style>
-    <!-- Optional: include Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NY FILMS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    /* Style for login/signup icons container */
+    .auth-icons {
+      display: flex;
+      gap: 15px;
+    }
+    /* Style for icons */
+    .auth-icons a {
+      color: #fff;
+      font-size: 1.5em;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    /* Optional: hover effect for icons */
+    .auth-icons a:hover {
+      color: #ddd;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+    }
+    nav a {
+      color: #fff;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #666;
+    }
+    .container {
+      padding: 20px;
+    }
+    .movies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .movie {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 10px;
+    }
+    .movie img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .movie h3 {
+      margin: 10px 0 5px 0;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-top: 10px;
+      background-color: #28a745;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .download-btn:hover {
+      background-color: #218838;
+    }
+  </style>
+  <!-- Include Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>NY FILMS</h1>
-        <!-- Login/Signup icons -->
-        <div class="auth-icons">
-            <a href="login.html" title="Login">
-                <i class="fas fa-sign-in-alt"></i>
-            </a>
-            <a href="signup.html" title="Sign Up">
-                <i class="fas fa-user-plus"></i>
-            </a>
-        </div>
-    </header>
-    <nav>
-        <a href="#">AGASOBANUYE</a>
-        <a href="#">SERIES</a>
-        <a href="#">KOREAN MOVIES</a>
-        <a href="#">AMERICAN</a>
-    </nav>
-    <div class="container">
-        <h2>Featured Movies</h2>
-        <div class="movies">
-            <div class="movie">
-                <img src="https://via.placeholder.com/200x300?text=Movie+1" alt="Movie 1" />
-                <h3>Movie Title 1</h3>
-                <a class="download-btn" href="#">Download</a>
-            </div>
-            <div class="movie">
-                <img src="https://via.placeholder.com/200x300?text=Movie+2" alt="Movie 2" />
-                <h3>Movie Title 2</h3>
-                <a class="download-btn" href="#">Download</a>
-            </div>
-            <div class="movie">
-                <img src="https://via.placeholder.com/200x300?text=Movie+3" alt="Movie 3" />
-                <h3>Movie Title 3</h3>
-                <a class="download-btn" href="#">Download</a>
-            </div>
-            <!-- Add more movies as needed -->
-        </div>
+  <header>
+    <h1>NY FILMS</h1>
+    <!-- Login/Signup icons positioned on the right -->
+    <div class="auth-icons">
+      <a href="login.html" title="Login">
+        <i class="fas fa-sign-in-alt"></i>
+      </a>
+      <a href="signup.html" title="Sign Up">
+        <i class="fas fa-user-plus"></i>
+      </a>
     </div>
+  </header>
+  <nav>
+    <a href="#">AGASOBANUYE</a>
+    <a href="#">SERIES</a>
+    <a href="#">KOREAN MOVIES</a>
+    <a href="#">AMERICAN</a>
+  </nav>
+  <div class="container">
+    <h2>Featured Movies</h2>
+    <div class="movies">
+      <div class="movie">
+        <img src="https://via.placeholder.com/200x300?text=Movie+1" alt="Movie 1" />
+        <h3>Movie Title 1</h3>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+      <div class="movie">
+        <img src="https://via.placeholder.com/200x300?text=Movie+2" alt="Movie 2" />
+        <h3>Movie Title 2</h3>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+      <div class="movie">
+        <img src="https://via.placeholder.com/200x300?text=Movie+3" alt="Movie 3" />
+        <h3>Movie Title 3</h3>
+        <a class="download-btn" href="#">Download</a>
+      </div>
+      <!-- More movies as needed -->
+    </div>
+  </div>
 </body>
 </html>
