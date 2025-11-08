@@ -10,6 +10,9 @@
         min-height: 100vh;
         margin: 0;
       }
+      .image:{
+          width: 100px;
+      }
       .container {
         width: 440px; margin: 40px auto; background: #fff; 
         padding: 30px; box-shadow: 0 0 12px #aaa; border-radius: 12px;
@@ -47,7 +50,7 @@
         text-align: center; color: #aaa;
         margin-top: 20px;
      .films{
-         width: 100px;
+         width: 80px;
      }
       }
     </style>
@@ -65,7 +68,7 @@
         <h2 style="margin-top:40px; text-align:center; color:#c0392b;">Featured Films</h2>
         <div id="loading">Loading films...</div>
         <div class="films" id="films">
-            <img src="AUDI.jpg"></img>
+            <img class="image" src="AUDI.jpg"></img>
         </div>
     </div>
     <script>
@@ -115,6 +118,7 @@
     </script>
 </body>
 </html>
+
 
 
 
